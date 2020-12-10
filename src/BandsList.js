@@ -5,7 +5,7 @@ import './BandsList.css'
 
 
 function BandsList() {
-    const bands = data.map(({ band_name, formed, origin, fans }, i) => {
+    const bands = data.map(({ band_name, formed, origin, fans, style }, i) => {
         return (
             <Band
             id={i}
@@ -14,6 +14,7 @@ function BandsList() {
             formed={formed}
             origin={origin}
             fans={fans}
+            style={style}
           />
         )
     })

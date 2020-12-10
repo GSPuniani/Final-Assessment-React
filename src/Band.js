@@ -4,14 +4,15 @@ import './Band.css'
 
 
 function Band(props) {
-  const { name, formed, origin, fans } = props
+  const { name, formed, origin, fans, style } = props
 
   return (
     <div className="Band">
-        <h1 className="Band-name">{ name }</h1>
-        <p className="Band-formed"><b>Formed:</b> { formed }</p>
-        <p className="Band-origin"><b>Origin:</b> { origin }</p>
-        <p className="Band-fans"><b>Fans:</b> { (fans * 1000).toLocaleString('en') }</p>
+        <h1>{ name }</h1>
+        <p><b>Formed:</b> { formed }</p>
+        <p><b>Origin:</b> { origin }</p>
+        <p><b>Fans:</b> { (fans * 1000).toLocaleString('en') }</p>
+        <p><b>Styles:</b> { style }</p>
 
         <Like />
     </div>
