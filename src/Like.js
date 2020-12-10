@@ -22,11 +22,11 @@ class Like extends Component {
 
         <button onClick={(e) => {
           this.increment()
-        }}>+1</button>
+        }}>&#128077;</button>
 
         <button onClick={(e) => {
           this.decrement()
-        }}>-1</button>
+        }}>&#128078;</button>
       </div>
     )
   }
