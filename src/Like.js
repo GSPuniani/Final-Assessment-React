@@ -18,7 +18,7 @@ class Like extends Component {
   render() {
     return (
       <div>
-        <p>Likes: {this.state.count}</p>
+        <p><b>Likes:</b> {this.state.count}</p>
 
         <button onClick={(e) => {
           this.increment()
