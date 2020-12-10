@@ -1,0 +1,24 @@
+.BandsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
+    background-color: black;
+    color: cornsilk;
+  }
+  
+  /* Smaller screens and tablets */
+  @media only screen and (max-width: 960px) {
+    .BandsList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Small screens mobile */
+  @media only screen and (max-width: 700px) {
+    .BandsList {
+      grid-template-columns: 1fr;
+    }
+  } 
